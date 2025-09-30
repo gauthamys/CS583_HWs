@@ -4,5 +4,5 @@
 ### MSApriori
 
 ```
-python HW1.py data.txt params.txt output.txt
+python3 HW1.py data.txt params.txt output.txt
 ```
