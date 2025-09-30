@@ -1,0 +1,10 @@
+MIS(1) = 0.02
+MIS(2) = 0.04
+MIS(3) = 0.03
+MIS(rest) = 0.01
+Price(1) = 20
+Price(2) = 25
+Price(3) = 15
+Price(rest) = 5
+SDC = 0.003
+AVPT = 20
