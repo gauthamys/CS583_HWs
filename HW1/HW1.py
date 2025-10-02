@@ -12,7 +12,23 @@ class MSApriori:
         self.total_transactions = 0
         self.frequent_itemsets = {}
         self.item_support_cache = {}  # Cache for 1-item supports
-        
+
+    def read_data_file(self, filename):
+        """Read transaction data from file"""
+        try:
+            with open(filename, 'r') as f:
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        transaction = [int(x.strip()) for x in line.split(',') if x.strip()]
+                        if transaction:
+                            self.transactions.append(set(transaction))
+            self.total_transactions = len(self.transactions)
+            print(f"Read {self.total_transactions} transactions")
+        except FileNotFoundError:
+            print(f"Error: Could not find data file '{filename}'")
+            sys.exit(1)
+
     def read_data_file(self, filename):
         """Read transaction data from file"""
         try:
