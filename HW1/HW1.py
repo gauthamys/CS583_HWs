@@ -36,7 +36,7 @@ class MSApriori:
                 for line in f:
                     line = line.strip()
                     if line:
-                        transaction = [int(x.strip()) for x in line.split(',') if x.strip()]
+                        transaction = [int(x.strip('\ufeff').strip()) for x in line.split(',') if x.strip()]
                         if transaction:
                             self.transactions.append(set(transaction))
             self.total_transactions = len(self.transactions)
