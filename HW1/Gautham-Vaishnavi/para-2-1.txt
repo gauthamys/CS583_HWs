@@ -1,0 +1,23 @@
+MIS(1) = 0.25
+MIS(2) = 0.4
+MIS(3) = 0.5
+MIS(4) = 0.35
+MIS(5) = 0.2
+MIS(6) = 0.3
+MIS(7) = 0.15
+MIS(8) = 0.12
+MIS(9) = 0.1
+
+Price(1) = 8
+Price(2) = 8
+Price(3) = 2
+Price(4) = 5
+Price(5) = 7
+Price(6) = 2
+Price(7) = 2
+Price(8) = 7
+Price(rest) = 3
+
+SDC = 0.4
+AVPT = 3
+
